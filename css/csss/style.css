@@ -1,0 +1,222 @@
+.external {
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    background-color: white;
+    /*ยกตัวอย่างdivพื้นที่ใส่กรอบ*/
+}
+
+.backgroundimg {
+    width: 500px;
+    height: 500px;
+    /* background-image: url(../img/tiger.jpg) กรณีลงรูปในโฟลเดอร์; */
+    background-image: url("https://cdn.create.vista.com/api/media/small/7097431/stock-photo-stunning-close-up-image-of-tiger-relaxing-on-warm-day");
+    background-repeat: no-repeat;
+    /* กรณีที่ตั้งค่าความสูงกว้างเกินรูปจะทำให้รูปลงซ้ำ เพื่อกันรูปลงซ้ำใช้อันนี้ */
+    background-color: brown;
+    /* background-size: cover;กรณีที่อยากให้รูปเต็มกล่องที่กำหนดมา*/
+    /* background-position: 50% 50%; กรณีอยากให้ตำแหน่งรูปอยู่ที่ซ้าย50ขวา50 */
+    /* background: url(../img/tiger.jpg) no-repeat; กรณีใช้เป็น short hand*/
+}
+
+.propotyborder {
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
+    /* border-style: dashed;  เป็นเส้นกล่องจุดๆๆ */
+    border: 2px dotted purple
+        /* ทำเป็นบรรทัดเดียว */
+        /* boder-width : 2px;
+        boder-style : dotted;
+        border-color : pink */
+}
+
+.boxmodell {
+    width: 300px;
+    height: 400px;
+    background: blue;
+    border: 3px solid black;
+    color: aliceblue;
+
+    /* margin-top: ; 
+    margin-right: ;
+    margin-bottom: ;
+    margin-left: ; กำหนดระยะห่างหน้ากระดาษ จะเข้ามาเท่าไหร่จากขอบ
+    margin: 0 0 0 0; กรณีเขียนบรรทัดเดียว
+    margin: 10px 20px 10px; ระยะห่างบน ซ้าย-ขวา ล่าง
+    margin: 10px 20px ; ระยะห่างบนล่าง ซ้ายขวา
+    */
+    margin: 0 auto;
+    /* บนล่าง0 ซ้ายขวาauto ใช้จัดกึ่งกลาง  */
+    /* padding-top: ;
+    padding-right: ;
+    padding-bottom: ;
+    padding-left: ; กำหนดระห่างจากข้างในกล่องที่เราสร้าง(กรณีเป็นตัวอักษร) 
+    padding: 0 0 0 0;
+    padding: 10px 20px 10px; 
+    padding: 10px 20px ;
+   */
+    padding: 0 auto;
+}
+
+.ex1 {
+    width: 500px;
+    border: 2px solid green;
+}
+
+.ex2 {
+    max-width: 500px;
+    border: 2px solid red;
+}
+
+/* .static{ 
+    width: 300px;
+    height: 50px;
+    border: 2px solid greenyellow;
+    position: static;
+    top: 100px;
+     คงที่ เปลี่ยนกว้างยาวแล้วไม่ขยับ 
+}
+.relative{
+    width: 300px;
+    height: 50px;
+    border: 2px solid greenyellow;
+    position: relative;
+    top: 100px;
+    left: 200px;
+     อ้างอิงจากตำแหน่งเดิม 
+}
+.fixed{
+    width: 300px;
+    height: 50px;
+    border: 2px solid greenyellow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: blue;
+    color: azure;
+     z-index: -1; 
+     z-idex ใช้บอกว่าตัวไหนอยู่หน้าหลัง ยิ่งเยอะกว่ายิ่งอยู่หน้า 
+     ตัวจะฟิกอยู่กับที่ เลื่อนแล้วจะอยู่ที่เดิมบนจอ ให้เห็นตลอดเวลา 
+} 
+.sticky{
+    width: 300px;
+    height: 50px;
+    border: 2px solid greenyellow;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    background: blue;
+    color: azure;
+    z-index: 1;
+    คล้ายฟิกแต่ว่าเลื่อนแล้วจะไปจุดเดิม
+}  
+
+absolute ต้องใช้คู่ relative 
+.absolute{
+    width: 300px;
+    height: 150px;
+    border: 2px solid greenyellow;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+.child{
+    width: 300px;
+    height: 150px;
+    border: 2px solid greenyellow;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    อยู่เคลื่อนภายในกล่อง แต่ถ้าอยากให้เลื่อมออกมาให้ใช้ -0px
+} */
+.boxlon {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    overflow: scroll;
+    /* ถ้าใช้ hidden เนื้อหาที่เกินมาจะถูกตัดออก , scroll เกินมาเลื่อนได้ */
+}
+header{
+    height: 60px;
+    background: yellow;
+}
+section{
+    width: 40%;
+    float: left;
+    height: 300px;
+    background: yellowgreen;
+}
+aside{
+    width: 40%;
+    float: right;
+    height: 300px;
+    background: brown;
+}
+.clear{
+    clear: both;
+}
+footer{
+    height: 60px;
+    background: blueviolet;
+}
+.imageout{
+    border: 2px solid black;
+}
+.fiximgout{
+    border: 2px solid black;
+    overflow: auto;
+}
+img{
+   float: right; 
+}
+/* div p {
+    background: yellow;
+     p ข้างในอันอื่นก็นับรวม 
+}
+div > p {
+    background: yellow;
+     p ข้างในอันอื่นไม่นับรวม 
+} 
+div ตัวหนอน p {
+    background: yellow;
+     เหมือน + แต่เอาอันที่อยู่ด้านล่างมาด้วย
+}
+*/
+div + p {
+    background: yellow;
+    /* หาตัวที่อยู่หลัง div ใหญ่แรก     */
+}
+.psudoclass{
+    width: 100px;
+    height: 100px;
+    background: black;
+}
+.psudoclass:hover{
+    background: red;
+}
+/* เลื่อนไปที่พท.แล้วเปลี่ยนสีเป็นสีแดง */
+.psudoelement p::first-line{
+    font-size: 36px;
+}
+.psudoelement p::before{
+    content: "This is inserted from ::before";
+}
+.psudoelement p::after{
+    content: "This is inserted from ::after";
+}
+.boxsizingbefore{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 20px;
+    /* ถ้าไม่ใช้  boxxing ขนาดจะถูกบวกรวมกับ border และ padding */
+}
+.boxsizingafter{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    /* ถ้าไม่ใช้  boxxing ขนาดจะถูกบวกรวมกับ border และ padding */
+}
